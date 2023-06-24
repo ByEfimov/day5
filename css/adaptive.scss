@@ -1,0 +1,247 @@
+@media (max-width: 1423px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    .main__body {
+      .main__text {
+        margin-top: 0;
+      }
+    }
+  }
+  .episodes .episodes__body {
+    .episodes__items .episodes__item .item__text {
+      .number {
+        margin-top: 15px;
+      }
+      .title {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      .desc {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+  .header__body {
+    padding: 43px 0px;
+  }
+  .about .about__body {
+    .about__image {
+      flex-shrink: 1;
+    }
+    .about__text {
+      .title {
+        line-height: 70px;
+      }
+      .text {
+        font-size: 20px;
+      }
+    }
+  }
+  .from .form__body .form__inputs {
+    align-items: end;
+    input {
+      padding: 11px 20px;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main .main__body {
+    flex-direction: column;
+    align-items: center;
+    .main__text {
+      margin-right: 0;
+      .main-listen {
+        margin-top: 40px;
+      }
+    }
+  }
+  .episodes {
+    margin-top: 120px;
+    .episodes__body .episodes__items .episodes__item {
+      overflow: hidden;
+      position: relative;
+      .item__image {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        z-index: 0;
+        left: 0;
+        -webkit-filter: brightness(40%);
+      }
+      .item__text {
+        z-index: 1;
+      }
+    }
+  }
+  .about .about__body {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    .about__text {
+      align-items: center;
+      button {
+        display: none;
+      }
+      .text {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }
+  .from .form__body {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .header__use {
+      gap: 12px;
+    }
+  }
+  .main .main__body {
+    gap: 20px;
+    .main__text .main-text {
+      width: auto;
+      font-size: 55px;
+      br {
+        display: none;
+      }
+    }
+  }
+  .episodes .episodes__body {
+    .episodes__items .episodes__item .item__image {
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+    .episodes__title {
+      font-size: 40px;
+      line-height: 55px;
+    }
+  }
+  .about .about__body .about__text {
+    width: auto;
+    .title {
+      font-size: 50px;
+    }
+    .text {
+      font-size: 18px;
+    }
+  }
+  .from .form__body .form__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .label {
+      color: #fff;
+      font-size: 50px;
+      font-family: DM Sans;
+      line-height: 55px;
+      letter-spacing: 2.88px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header__body {
+    justify-content: center;
+    .header__use {
+      display: none;
+    }
+  }
+  .main .main__body .main__text {
+    .main-listen {
+      font-size: 0;
+      margin-top: 15px;
+      .icons {
+        justify-content: center;
+      }
+    }
+    .main-text {
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 2px;
+      .line {
+        left: 60px;
+        top: 150px;
+      }
+    }
+  }
+  .episodes .episodes__body {
+    .episodes__title {
+      font-size: 32px;
+    }
+    .episodes__title .viewAll {
+      display: none;
+    }
+    .episodes__items .episodes__item {
+      padding: 10px;
+      .item__text {
+        .desc {
+          font-size: 12px;
+        }
+        .title {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 1.6px;
+        }
+      }
+    }
+  }
+  .from .form__body {
+    padding: 20px;
+    .form__inputs input {
+      padding: 11px 20px;
+      width: auto;
+    }
+  }
+  .about .about__body .about__text {
+    .text {
+      font-size: 13px;
+    }
+    .title {
+      text-align: center;
+      line-height: 55px;
+    }
+  }
+  .from .form__body {
+    .form__text .label {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 2px;
+    }
+    .form__inputs {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      input {
+        width: 240px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .comments .comments__body .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 20px;
+      text-align: center;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+  }
+}

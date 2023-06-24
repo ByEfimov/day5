@@ -231,6 +231,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 200px; }
   .comments .comments__body {
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap; }
     .comments .comments__body .comment {
